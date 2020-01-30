@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    var zero = 0;
+    $(document).ready(function(){
+        $(window).on('scroll',function(){
+            $('.navbar').toggleClass('hide',$(window).scrollTop() > zero);
+            zero = $(window).scrollTop();
+        })
+    })
+    </script>
+    <title>Show menu on scroll up</title>
+</head>
+<body>
+    <div class="navbar">
+        <h2>Galaxy Global IT</h2>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+    <section class="sec1"></section>
+    <section class="sec2">
+        <h1>Show header on scroll up hide on scroll down</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste a, repudiandae velit facilis nemo vitae illo rem! Quisquam in dicta enim voluptas, consectetur cumque tempora placeat quae alias, vel deleniti veritatis vitae rem sunt et optio laboriosam, autem quod minima repellendus doloribus magni sequi sapiente aut. Amet alias necessitatibus culpa tenetur incidunt illo, impedit accusantium corrupti cupiditate natus dicta provident odit, similique, maxime laborum magni mollitia et tempore temporibus. Omnis, eius reprehenderit dignissimos minus quod perspiciatis itaque tempora in laudantium obcaecati porro rem nemo optio fuga? Veniam, quasi illo odit animi consectetur enim aperiam quod soluta deserunt blanditiis corporis quisquam laboriosam neque doloremque eos placeat laborum vel dignissimos quibusdam harum dolor exercitationem. Necessitatibus iusto laudantium architecto. Temporibus maxime voluptatum aliquam iusto explicabo culpa assumenda perspiciatis consequuntur exercitationem magni. Placeat quos velit numquam, aliquid animi tempore praesentium quidem voluptatibus alias molestiae cumque eius laborum eos debitis sunt blanditiis. Ad illum illo repudiandae labore mollitia ex atque in odit delectus fugiat inventore expedita nostrum cupiditate eligendi, aspernatur quis rerum voluptatem sit veniam! Quam iusto similique quibusdam! Facilis repudiandae ab explicabo, sed dicta sunt voluptate voluptas voluptates dolor dolore dolores impedit. Numquam accusamus eveniet asperiores nulla sapiente possimus nobis earum quasi iste unde?</p>
+    </section>
+    <section class="sec3"></section>
+</body>
+</html>
